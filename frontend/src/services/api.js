@@ -1,6 +1,7 @@
 import axios from 'axios';
-
-const API_BASE_URL = 'http://localhost:5000/api'; // Ensure this matches your backend port
+import dotenv from 'dotenv';
+dotenv.config({path:"E:\social-media-analyzer\frontend\src\services\.env"})
+const API_BASE_URL = "http://localhost:5000/api" // Ensure this matches your backend port
 
 export const analyzeContent = async (content) => {
     try {

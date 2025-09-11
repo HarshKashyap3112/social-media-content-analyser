@@ -1,7 +1,7 @@
 import axios from 'axios';
 // import dotenv from 'dotenv';
 // dotenv.config({path:"E:\social-media-analyzer\frontend\src\services\.env"})
-const API_BASE_URL = "https://social-media-content-analyser-vfdc.onrender.com/" // Ensure this matches your backend port
+const API_BASE_URL = "https://social-media-content-analyser-vfdc.onrender.com/api" // Ensure this matches your backend port
 
 export const analyzeContent = async (content) => {
     try {

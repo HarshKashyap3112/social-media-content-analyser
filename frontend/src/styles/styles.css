@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar for better aesthetics */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Dark mode scrollbar */
+.dark ::-webkit-scrollbar-track {
+  background: #2d3748; /* Darker track */
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #4a5568; /* Darker thumb */
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #6b7280; /* Even darker thumb on hover */
+}
+
+/* Basic body styling for font and background */
+body {
+  font-family: 'Inter', sans-serif; /* You might need to import Inter font */
+  @apply bg-gray-100 text-gray-900;
+}
+
+/* Dark mode specific styles */
+.dark body {
+  @apply bg-gray-900 text-gray-100;
+}

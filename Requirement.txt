@@ -1,0 +1,15 @@
+for  backend requirements 
+express
+cors
+@google/generative-ai
+
+cd backend
+npm init -y
+npm install express cors @google/generative-ai
+
+for frontend requiremnets 
+react-router-dom
+axios
+
+cd frontend
+npm install react-router-dom axios
